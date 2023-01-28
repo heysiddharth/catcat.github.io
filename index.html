@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wanna be my valentine??</title>
+    <style>
+    body {
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    </style>
+    <script>
+      var noButtonClickCount = 0;
+      function moveNoButton() {
+        noButtonClickCount++;
+        if (noButtonClickCount >= 10) {
+          alert("As u wish 0_0");
+        }
+        var noButton = document.getElementById("no-button");
+        noButton.style.position = "absolute";
+        noButton.style.left = Math.floor(Math.random() * 400) + "px";
+        noButton.style.top = Math.floor(Math.random() * 400) + "px";
+      }
+      function showThankYouMessage() {
+        alert("Thank youuuuuuuuuuuu!");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Wanna be my valentine??</h1>
+    <img src="https://media.tenor.com/4L4U7UME9RIAAAAd/kitty-kitten.gif" alt="Animated Gif">
+    <br>
+    <button id="yes-button" onclick="showThankYouMessage()">Yes</button>
+    <button id="no-button" onclick="moveNoButton()">No</button>
+  </body>
+</html>
